@@ -6,7 +6,7 @@ const vaapiPrefix = ` -hwaccel vaapi -hwaccel_device /dev/dri/renderD129 -hwacce
 
 const details = () => {
   return {
-    id: `Tdarr_Plugin_Dtpf_VaapiHEVCFrameRepair`,
+    id: `Tdarr_Plugin_DtPf_VaapiHEVCFrameRepair`,
     Stage: 'Pre-processing',
     Name: `FRAME REPAIR FFMPEG VAAPI HEVC`,
     Type: `Video`,
