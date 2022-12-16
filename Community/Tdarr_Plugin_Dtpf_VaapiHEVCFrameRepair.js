@@ -16,7 +16,7 @@ const details = () => {
     Inputs: [{
       name: `_i_frame_issue_Only`,
       type: 'string',
-      defaultValue:'false',
+      defaultValue:'true',
       inputUI: {
         type: 'text',
       },
