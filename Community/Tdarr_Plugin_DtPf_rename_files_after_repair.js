@@ -3,7 +3,7 @@
 // tdarrSkipTest
 const details = () => {
   return {
-    id: "Tdarr_Plugin_DTPF_rename_files_after_repair",
+    id: "Tdarr_Plugin_DtPf_rename_files_after_repair",
     Stage: "Post-processing",
     Name: "Rename repaired File",
     Type: "Video",
