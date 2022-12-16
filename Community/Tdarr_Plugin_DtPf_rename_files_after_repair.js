@@ -1,5 +1,5 @@
 /* eslint-disable */
-
+// took it from thelemon22 and edited a bit.
 // tdarrSkipTest
 const details = () => {
   return {
@@ -8,7 +8,7 @@ const details = () => {
     Name: "Rename repaired File",
     Type: "Video",
     Operation: "Transcode",
-    Description: `[Contains built-in filter] If the filename contains '_i_frame_issue', this plugin removes this, ideally after being repaired. \n\n`,
+    Description: `[Contains built-in filter] If the filename contains '_i_frame_issue', this plugin renames it to '_i_frame_healed', ideally after being repaired. \n\n`,
     Version: "1.00",
     Tags: "post-processing",
     Inputs:[]
@@ -26,11 +26,12 @@ const plugin = (file, librarySettings, inputs, otherArguments) => {
     var fileNameOld = file._id;
 
     if (
-      file.file.includes("i_frame_issue")
+      file._id.includes("_issue")
     ) {
-      file.file = file.file.replace("_i_frame_issue", "_healed");
+      file._id = file._id.replace("_issue", "_healed");
+      file.file = file.file.replace("_issue", "_healed");
     }
-    
+        
     if (fileNameOld != file._id) {
       fs.renameSync(fileNameOld, file._id, {
         overwrite: true,
