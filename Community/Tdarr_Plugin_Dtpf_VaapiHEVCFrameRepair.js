@@ -5,7 +5,7 @@ const details = () => {
   return {
     id: `Tdarr_Plugin_Dtpf_VaapiHEVCFrameRepair`,
     Stage: 'Pre-processing',
-    Name: `FFMPEG VAAPI HEVC Frame Repair`,
+    Name: `FRAME REPAIR FFMPEG VAAPI HEVC`,
     Type: `Video`,
     Operation: `Transcode`,
     Description: `Damaged MKV Files in HEVC will be reencoded to HEVC video using ffmpeg with libvaapi. ` +
