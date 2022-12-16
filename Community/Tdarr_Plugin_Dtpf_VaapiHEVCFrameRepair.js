@@ -1,3 +1,6 @@
+// Just edited a bit of the original from Mthrboard
+// Also use Filter - break out of plugin stack if processed because of hevc to hevc which would create a loop
+// a more elegant solution would be a rename after processing, still working on that
 /* eslint-disable */
 const vaapiPrefix = ` -hwaccel vaapi -hwaccel_device /dev/dri/renderD129 -hwaccel_output_format vaapi `;
 
