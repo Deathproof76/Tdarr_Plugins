@@ -3,8 +3,7 @@
 // Extra logic is mainly to control encoder quality/speed & to allow HEVC files to be reprocessed to reduce file size
 
 // NOTE - This does not use VAAPI, it is QSV only. So newer intel iGPUs only. 8th+ gen should work.
-// Additionally this was designed and tested on UNRAID via docker though there is logic to support use on
-// Windows, Linux & Mac
+
 
 // White paper from intel regarding QSV performance on linux using FFMPEG here:
 // eslint-disable-next-line max-len
